@@ -1,8 +1,22 @@
 version: "3"
+
+
 services:
   web:
     build: .
+    container_name: flaskapp
     ports:
       - "5000:5000"
     volumes:
       - .:/home/flaskapp
+
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus/config:/etc/prometheus
+    restart: unless-stopped
+    command:
+      - "--config.file=/etc/prometheus/prometheus.yml"

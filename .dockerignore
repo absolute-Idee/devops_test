@@ -1,4 +1,5 @@
 venv
+grafana-data
 
 .gitignore
 Dockerfile

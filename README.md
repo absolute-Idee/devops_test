@@ -14,8 +14,7 @@
 
 <img src="https://user-images.githubusercontent.com/67152968/199477766-3e326ffc-d26b-442d-bf1e-16609ed8dd4e.png" width="800">
 
+4. При помощи ApacheBench проверим нагрузку в 100 запросов в секунду, а также график grafana.
 
-   4. Любым удобным инструментом (например Apache bench) проверьте,
-      справляется-ли приложение `app.py` с нагрузкой в 100 запросов в секунду.
-      Соберите вывод тестового инструментария и снимите скриншот графика
-      количества посещений, если он есть;
+<img src="https://user-images.githubusercontent.com/67152968/199482697-d48b89c7-0f60-487c-8b80-ec93eb0c07a0.png" width="600">
+<img src="https://user-images.githubusercontent.com/67152968/199482979-604a659a-f5eb-426c-a001-35aa744bb614.png" width="800">
